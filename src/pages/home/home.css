@@ -12,7 +12,7 @@
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
     .main-img {
         object-fit: cover;
         width: 100vw;
