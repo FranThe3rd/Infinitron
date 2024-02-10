@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+
+
+
+.container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 15px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ height: 100%;
+}
+
+.home-logo {
+    margin-top: -20px;
+ width: 90px;
+}
+
+
+.navbar {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px;
+  z-index: 1000;
+}
+  
+  
+
+
+.logo {
+}
+
+
+.menu-icon {
+ display: none;
+}
+
+
+.nav-elements {
+}
+
+
+.nav-elements ul {
+ display: flex;
+ justify-content: space-between;
+ list-style-type: none;
+}
+
+
+.nav-elements ul li:not(:last-child) {
+ margin-right: 60px;
+}
+
+
+.nav-elements ul a {
+ font-size: 16px;
+ font-weight: 400;
+ color: #dedede;
+ text-decoration: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+ .nav-elements ul li:not(:last-child) {
+   margin-right: 30px;
+ }
+
+ .navbar {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+
+ }
+
+
+
+}
+
+
+@media (max-width: 600px) {
+ .menu-icon {
+   display: block;
+   cursor: pointer;
+   margin-right: -250px;
+   
+ }
+
+
+ .nav-elements {
+  backdrop-filter: blur(5px);
+  margin-top: 24px;
+   position: absolute;
+   right: 0;
+   top: 60px;
+   width: 0px;
+   height: calc(100vh - 60px);
+   transition: all 0.3s ease-in;
+   overflow: hidden;
+ }
+
+
+ .nav-elements.active {
+   width: 270px;
+ }
+
+
+ .nav-elements ul {
+   display: flex;
+   flex-direction: column;
+ }
+
+
+ .nav-elements ul li {
+   margin-right: unset;
+   margin-top: 22px;
+ }
+}
+
+.search-icon {
+    margin-right: -500px;
+}
+
+
+.user-icon {
+    margin-right: -500px;
+}
+
+.shopping-icon {
+    margin-right: -500px;
+}
