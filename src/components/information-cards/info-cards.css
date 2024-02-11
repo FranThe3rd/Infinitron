@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/evogria');
+
+
+.info-cards {
+    margin-top: -140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Update the grid-template-columns property */
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 100px;
+    text-align: center;
+    
+}
+
+.info-card {
+    font-family: 'Evogria', sans-serif;
+    max-width: 430px;
+    width: 100%;
+    max-height: 300px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; 
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: white;
+    border-style: solid;
+    border-color: purple;
+    background-color: rgba(128, 0, 128, 0.6);
+}
+
+.info-card h2{
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+    text-align: center;
+
+}
+.info-card p {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+@media (max-width: 1024px) {
+    .info-cards {
+        grid-template-columns: 1fr;  
+        margin-left: 0px; 
+        margin-top: 0px;
+ 
+    }
+} 
+
+
+
+@media (max-width: 768px) {
+    .info-cards {
+        width: 80%;
+    }
+} 
+
+
+

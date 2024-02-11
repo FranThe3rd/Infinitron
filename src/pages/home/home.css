@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/evogria');
+
+
 .home {
     width: 100%;
     height: 100%;
@@ -8,7 +11,146 @@
     height: 80%;
     filter: brightness(50%);
     position: relative;
+    z-index: -9999;
+
+    
 }
+
+.home-h1 {
+    font-size: 80px;
+    font-family: 'Evogria', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+        position: absolute;
+    top: 35%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+}
+.home-h2 {
+    font-size: 40px;
+    font-family: 'Evogria', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    position: absolute;
+    top: 45.5%;
+    left: 20.8%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+}
+
+/* 
+    Buttons Styling
+*/
+
+.home-bttn-container {
+    max-width:500px;
+    width: 100%;
+    max-height:50px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-center;
+    position: absolute;
+    top: 57%;
+    left: 20.3%;
+    transform: translate(-50%, -50%);
+}
+
+.home-start-bttn {
+    margin-right: 50px;
+    max-width: 220px;
+    width: 100%;
+    max-height: 100px;
+    height: 110%;
+}
+
+.home-best-bttn {
+    max-width: 220px;
+    width: 100%;
+    max-height: 100px;
+    height: 110%;
+}
+
+.home-start-bttn {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(133, 7, 206);
+    --btn-bg-2: rgb(220, 21, 200);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(197, 8, 109, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .home-start-bttn:hover {
+    background-position: right top;
+  }
+  
+  .home-start-bttn:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+
+  .home-best-bttn {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(236, 236, 236);
+    --btn-bg-2: rgb(233, 233, 233);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(black);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .home-best-bttn:hover {
+    background-position: right top;
+  }
+  
+  .home-best-bttn:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .home-best-bttn {
+      transition: linear;
+    }
+  }
+  
+  
+  @media (prefers-reduced-motion: reduce) {
+    .home-start-bttn {
+      transition: linear;
+    }
+  }
+  
+
 
 
 

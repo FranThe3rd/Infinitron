@@ -23,6 +23,8 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="container">
+                <p className='home-title'>Infinitron</p>
+                
 
                 <div className="menu-icon" onClick={handleShowNavbar}>
                     <List size={40} color='white' />
