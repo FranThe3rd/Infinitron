@@ -12,11 +12,9 @@ export const Home = () => {
             <div className='home-bttn-container'>
                 <button className='home-start-bttn'>START BUILD</button>
                 <button className='home-best-bttn'>BEST SELLERS</button>
-
             </div>
-
-
             <InfoCards />
+            <button className='home-start-bttn2'>START BUILD</button>
         </div>
     )
 }

@@ -27,7 +27,7 @@
     position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   background: transparent;
   padding: 20px;
   z-index: 1000;
@@ -83,12 +83,9 @@
    margin-right: 30px;
  }
 
- 
-
- 
-
-
-
+ .navbar {
+  height: 30px;
+ }
 
 }
 
@@ -131,12 +128,13 @@
 
 
  .nav-elements.active {
+  margin-top: 10px;
+
   backdrop-filter: blur(5px);
-  max-height: 1000px ;
+  max-height: 4000px ;
    width: 100%;
   background: rgba(0, 0, 0, 0.4);
-   margin-right: 10px;
-   margin-top: 75px;
+   margin-right: 0px;
  }
 
 

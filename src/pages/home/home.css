@@ -7,8 +7,8 @@
 }
 
 .main-img {
-    width: 100%;
-    height: 80%;
+  width: 100vw;
+  height: 100vh;
     filter: brightness(50%);
     position: relative;
     z-index: -9999;
@@ -17,18 +17,22 @@
 }
 
 .home-h1 {
-    font-size: 80px;
-    font-family: 'Evogria', sans-serif;
-    font-weight: 100;
-    font-style: italic;
-        position: absolute;
-    top: 35%;
-    left: 24%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-
+  font-size: 80px;
+  font-family: 'Evogria', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  position: absolute;
+  top: 35%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
 }
+
+
+
+
+
 .home-h2 {
     font-size: 40px;
     font-family: 'Evogria', sans-serif;
@@ -42,6 +46,24 @@
     text-align: center;
 
 }
+
+@media only screen and (max-width: 600px) {
+  .home-h1 {
+    font-size: 30px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .home-h2 {
+    font-size: 21px;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
 
 /* 
     Buttons Styling
@@ -60,6 +82,14 @@
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 600px) {
+ 
+  .home-bttn-container {
+    top: 71%;
+    left: 60%;
+  }
+}
+
 .home-start-bttn {
     margin-right: 50px;
     max-width: 220px;
@@ -74,6 +104,8 @@
     max-height: 100px;
     height: 110%;
 }
+
+
 
 .home-start-bttn {
     --clr-font-main: hsla(0 0% 20% / 100);
@@ -137,19 +169,66 @@
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
   
-  @media (prefers-reduced-motion: reduce) {
-    .home-best-bttn {
-      transition: linear;
-    }
+
+  .home-start-bttn2 {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(133, 7, 206);
+    --btn-bg-2: rgb(220, 21, 200);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(197, 8, 109, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
   }
-  
-  
-  @media (prefers-reduced-motion: reduce) {
+
+  @media only screen and (max-width: 600px) {
     .home-start-bttn {
-      transition: linear;
+      max-width: 70px;
+      width: 100%;
+      font-size: 13px;
+    }
+    .home-best-bttn {
+      max-width: 70px;
+      width: 100%;
+      font-size: 12px;
+  
     }
   }
   
+  
+  .home-start-bttn2:hover {
+    background-position: right top;
+  }
+  
+  .home-start-bttn2:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+
+  .home-start-bttn2 {
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+
+  }
+
+.info-container {
+  display: flex;
+  justify-content: center;
+}
 
 
 

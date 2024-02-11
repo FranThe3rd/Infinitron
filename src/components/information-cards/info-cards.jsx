@@ -3,6 +3,7 @@ import './info-cards.css';
 
 export const InfoCards = () => {
     return (
+        <div className='info-container'>
         <div className='info-cards'>
             <div className='info-card'>
                 <h2>Low Pricing</h2>
@@ -16,6 +17,7 @@ export const InfoCards = () => {
                 <h2>2 Years Warranty</h2>
                 <p>You're protected with us. Our team of in-house gamers will get you back up and running if you run into any issues. All gaming desktops include parts and labor coverage.</p>
             </div>
+        </div>
         </div>
     )
 }
