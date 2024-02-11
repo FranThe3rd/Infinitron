@@ -8,6 +8,7 @@
     justify-content: center;
     gap: 100px;
     margin-left: 70px;
+    margin-right: 70px;
     padding: 1rem;
     text-align: center;
     margin-bottom: 50px;
@@ -37,6 +38,8 @@
     .info-cards {
         margin-left: 0px;
         width: 90%;
+        margin-right: 20px;
+
         
     }
 
@@ -64,8 +67,8 @@
 
 @media (max-width: 768px) {
     .info-cards {
-        margin-right: 50px;
-        width: 80%;
+        margin-right: 40px;
+        width: 100%;
     }
 } 
 
@@ -90,6 +93,14 @@
 
 }
 
+@media screen and (max-width: 768px) {
+    .info-card h2 {
+        font-size: 30px;
+    }
+    .info-card p {
+        font-size: 15px;
+    }
+}
 
 
 

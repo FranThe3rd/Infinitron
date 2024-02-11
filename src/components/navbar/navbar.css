@@ -1,39 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.cdnfonts.com/css/evogria');
 
 
 
+.home-logo {
+    margin-top: -20px;
+    width: 70px;
+}
 
+.home-title {
+    display: none;
+    font-family: 'Evogria', sans-serif;
+    color: white;
+}
 
 
 .container {
+z-index: 99999;
  max-width: 1100px;
  margin: 0 auto;
  padding: 0 15px;
  display: flex;
- justify-content: space-evenly;
+ justify-content: space-between;
  align-items: center;
  height: 100%;
 }
 
-.home-logo {
-    margin-top: -20px;
- width: 90px;
- margin-bottom: 0px;
-}
-
 
 .navbar {
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  background: transparent;
-  padding: 20px;
-  z-index: 1000;
+z-index: 99999;
+ height: 60px;
+ background-color: #28282B;
+ position: absolute;
+ background-color: transparent;
+ margin-top: 50px;
+ margin-left: 300px;
 }
-  
-  
+
+@media screen and (max-width: 1600px){
+    .navbar {
+        margin-left: 240px;
+
+    }
+    
+}
 
 
 .logo {
@@ -44,9 +53,6 @@
  display: none;
 }
 
-.home-title {
-  display: none;
-}
 
 .nav-elements {
 }
@@ -67,7 +73,7 @@
 .nav-elements ul a {
  font-size: 16px;
  font-weight: 400;
- color: #dedede;
+ color: #ffffff;
  text-decoration: none;
 }
 
@@ -76,72 +82,58 @@
 
 
 
+@media screen and (max-width: 1190px){
+    .navbar {
+        margin-top: 0px;
+        margin-left: 0px;
+        background-color: #28282B;
+        position: relative;
+        text-align: center;
+    }
+
+}
 
 
 @media (max-width: 768px) {
  .nav-elements ul li:not(:last-child) {
    margin-right: 30px;
  }
-
- .navbar {
-  height: 30px;
- }
-
 }
 
 
-@media (max-width: 1076px) {
+@media (max-width: 1190px) {
  .menu-icon {
    display: block;
    cursor: pointer;
-   margin-right: -150px;
-   
+
  }
 
- @media (max-width: 500px) {
-  .menu-icon {
+ .home-title {
     display: block;
-    cursor: pointer;
-    margin-right: -110px;
-    
-  }
-}
-
- .navbar {
-  background: rgba(0, 0, 0, 0.5);
 
  }
-
 
 
  .nav-elements {
-  margin-top: 20px;
    position: absolute;
    right: 0;
    top: 60px;
+   background-color: #28282B;
    width: 0px;
    height: calc(100vh - 60px);
    transition: all 0.3s ease-in;
    overflow: hidden;
-
  }
 
 
  .nav-elements.active {
-  margin-top: 10px;
-
-  backdrop-filter: blur(5px);
-  max-height: 4000px ;
-   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-   margin-right: 0px;
+   width: 270px;
  }
 
 
  .nav-elements ul {
    display: flex;
    flex-direction: column;
-   text-align: center;
  }
 
 
@@ -149,47 +141,4 @@
    margin-right: unset;
    margin-top: 22px;
  }
-
- .home-title {
-  display: block;
- }
 }
-
-.search-icon {
-    margin-right: -500px;
-}
-
-
-.user-icon {
-    margin-right: -500px;
-}
-
-.shopping-icon {
-    margin-right: -500px;
-}
-
-@media (max-width: 1600px) {
-  .search-icon,
-  .user-icon,
-  .shopping-icon {
-    margin-right: -300px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .search-icon,
-  .user-icon,
-  .shopping-icon {
-    margin-right: 0;
-  }
-}
-
-.home-title {
-  font-size: 30px;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  font-family: 'Protest Strike', sans-serif;
-  margin-left: -100px;
-}
-

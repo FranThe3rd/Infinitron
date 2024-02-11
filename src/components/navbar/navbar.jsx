@@ -43,7 +43,7 @@ const Navbar = () => {
                         <li>
                             <NavLink to="/contact">Finance</NavLink>
                         </li>
-                        <li>                            <img className='home-logo' src={logo} alt="" />
+                        <li>  <img className='home-logo' src={logo} alt="" />
 </li>
 
                         <li>
