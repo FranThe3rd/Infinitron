@@ -1,6 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/evogria');
 
 
+.info-container {
+    display: flex;
+    justify-content: center;
+  }
+
 .info-cards {
     margin-top: -140px;
     display: grid;
@@ -39,6 +44,8 @@
         margin-left: 0px;
         width: 90%;
         margin-right: 20px;
+        margin-bottom: 25px;
+
 
         
     }
@@ -57,19 +64,32 @@
         grid-template-columns: 1fr;  
         margin-left: 0px; 
         margin-top: 0px;
+        margin-bottom: 25px;
+
  
     }
 
     .info-card {
         width: 100%;
+
     }
+
+    
 } 
 
 @media (max-width: 768px) {
     .info-cards {
         margin-right: 40px;
         width: 100%;
+        margin-bottom: 25px;
+
     }
+
+    .info-card {
+        height: 250px;
+
+    }
+    
 } 
 
 
@@ -85,7 +105,7 @@
 
 }
 .info-card p {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 100;
     color: white;
