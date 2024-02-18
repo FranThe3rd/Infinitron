@@ -5,24 +5,24 @@ const BestSellers = () => {
 
     const BestData = [
         {
-            title: 'Best Seller 1',
-            gpu: 'This',
-            caption: 'This is'
+            title: 'GOOD',
+            gpu: 'RTX 4060',
+            caption: 'Level up your gaming experience without breaking the bank!'
         },
         {
-            title: 'Best Seller 2',
-            gpu: 'This',
-            caption: 'This is'
+            title: 'BETTER',
+            gpu: 'RTX 4070 SUPER',
+            caption: 'Perfect gaming PC for high settings, max resolutions, and streaming.'
         },
         {
-            title: 'Best Seller 3',
-            gpu: 'This',
-            caption: 'This is'
+            title: 'BEST',
+            gpu: 'RTX 4080 SUPER',
+            caption: 'Maximum performance. Experience high frame rates at ultra settings.'
         },
         {
-            title: 'Best Seller 4',
-            gpu: 'This',
-            caption: 'This is'
+            title: 'ULTIMATE',
+            gpu: 'RTX 4090',
+            caption: 'Delivers the ultimate experience for gamers and content creators.'
         }
         
     ]
