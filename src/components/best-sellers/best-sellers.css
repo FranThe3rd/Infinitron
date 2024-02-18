@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/evogria');
+
+.best-sellers {
+    height: 1000px;
+}
+
+.best-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+
+}
+
+.best-h1 {
+    margin-top: 40px;
+    font-size: 65px;
+    text-align: center;
+    font-family: 'Evogria','sans-serif';
+    font-style: italic;
+    font-weight: 250;
+}
+
+.best-sellers-card {
+    border-radius: 10px;
+    background-color: red;
+    max-width: 320px;
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
+
+}
+
+@media (max-width: 768px) {
+    .best-h1 {
+        font-size: 40px;
+    }
+}

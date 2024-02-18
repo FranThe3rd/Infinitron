@@ -3,6 +3,7 @@ import './home.css';
 import mainScreen from '../../assets/home-imgs/mainscreen.png';
 import InfoCards from '../../components/information-cards/info-cards';
 import ReviewCards from '../../components/review-cards/review-cards';
+import BestSellers from '../../components/best-sellers/best-sellers';
 
 export const Home = () => {
     return (
@@ -17,6 +18,7 @@ export const Home = () => {
             <InfoCards />
             <button className='home-start-bttn2'>START BUILD</button>
             <ReviewCards />
+            <BestSellers />
 
         </div>
     )
