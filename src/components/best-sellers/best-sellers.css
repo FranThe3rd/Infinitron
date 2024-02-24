@@ -35,7 +35,7 @@
     width: 100%;
     height: 700px;
     margin-bottom: 30px;
-
+    box-shadow: rgba(183, 16, 181, 0.25) 0px 13px 27px -5px, rgba(199, 6, 209, 0.3) 0px 8px 16px -8px;
 
 }
 
@@ -69,18 +69,20 @@
     max-width: 100px;
     width: 100%;
     margin-top: -30px;
-
+    filter: drop-shadow(0px 0px 10px rgb(191, 27, 227));
 }
+
 
 .progress-text {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     display: block; /* Set display to inline-block */
-    margin: 15px;
+    margin: 0px;
 }
 
 .progress-bar {
-    margin-left: 10px;
+    margin: 15px;
+
     display: inline-block; /* Set display to inline-block */
     width: 50%;
     background-color: #f0f0f0;
@@ -92,6 +94,42 @@
     height: 8px;
     background-color: #3bce40;
     transition: width 0.3s ease-in-out;
+  }
+
+  .best-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .best-button {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(7, 206, 57);
+    --btn-bg-2: rgb(16, 240, 184);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(197, 8, 109, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .best-button:hover {
+    background-position: right top;
+  }
+  
+  .best-button:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
   
 
