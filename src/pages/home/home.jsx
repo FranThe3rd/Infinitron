@@ -4,6 +4,7 @@ import mainScreen from '../../assets/home-imgs/mainscreen.png';
 import InfoCards from '../../components/information-cards/info-cards';
 import ReviewCards from '../../components/review-cards/review-cards';
 import BestSellers from '../../components/best-sellers/best-sellers';
+import Follow from '../../components/follow/follow';
 
 export const Home = () => {
     return (
@@ -19,6 +20,7 @@ export const Home = () => {
             <button className='home-start-bttn2'>START BUILD</button>
             <ReviewCards />
             <BestSellers />
+            <Follow />
 
         </div>
     )
