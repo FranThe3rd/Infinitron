@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { List } from 'phosphor-react'
-import { GameController } from 'phosphor-react'
 import logo from '../../assets/home-imgs/infinitron-logo.png'
 import { User} from 'phosphor-react'
 import { ShoppingCart } from 'phosphor-react'

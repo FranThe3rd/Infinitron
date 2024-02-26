@@ -27,22 +27,19 @@ z-index: 99999;
 
 
 .navbar {
-z-index: 99999;
- height: 60px;
- background-color: #28282B;
- position: absolute;
- background-color: transparent;
- margin-top: 50px;
- margin-left: 300px;
+  z-index: 99999;
+  height: 60px;
+  background-color: #28282B;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
-@media screen and (max-width: 1600px){
-    .navbar {
-        margin-left: 240px;
 
-    }
-    
-}
 
 
 .logo {

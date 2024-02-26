@@ -5,6 +5,7 @@ import InfoCards from '../../components/information-cards/info-cards';
 import ReviewCards from '../../components/review-cards/review-cards';
 import BestSellers from '../../components/best-sellers/best-sellers';
 import Follow from '../../components/follow/follow';
+import SignUp from '../../components/sign-up/sign-up';
 
 export const Home = () => {
     return (
@@ -21,6 +22,7 @@ export const Home = () => {
             <ReviewCards />
             <BestSellers />
             <Follow />
+            <SignUp />
 
         </div>
     )
