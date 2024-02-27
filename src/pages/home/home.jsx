@@ -22,7 +22,7 @@ export const Home = () => {
                 <button className='home-start-bttn'>START BUILD</button>
                 <Link className='best-scroll' to="bestsellers" spy={true} smooth={true} duration={1000}>
                     <button className="home-best-bttn">
-                        START BUILD
+                        BEST SELLERS
                     </button>
                 </Link>            
             </div>

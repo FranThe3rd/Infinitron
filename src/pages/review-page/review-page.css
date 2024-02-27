@@ -9,12 +9,14 @@
 
 
 .review-page-h1 {
-    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Evogria', sans-serif;
     margin-top: 0px;
     color: white;
     text-align: center;
     padding-top: 150px;
-    font-size: clamp(40px, 5vw, 60px);  
+    font-size: clamp(20px, 3vw, 60px);  
 
 }
 
@@ -29,13 +31,20 @@
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(18, 4, 12, 0.05) 25px 25px;
+    transition: 0.5s ;
+}
+
+.review-page-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(18, 4, 12, 0.05) 25px 25px;
+    transition: 0.5s ;
 }
 
 .review-page-card-header {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .review-page-card-header img {
@@ -43,6 +52,13 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.review-page-date {
+    margin: 0px;
+    font-size: clamp(8px, 3vw, 15px);  
+    font-weight: 500;
+
 }
 
 .review-page-card-header h4 {
@@ -59,8 +75,12 @@
     margin-top: 10px;
 }
 
-.review-page-card-body p {
+
+.review-page-thoughts {
     font-size: clamp(10px, 2vw, 18px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
 }
 
 
@@ -69,14 +89,23 @@
     .review-page-container {
       grid-template-columns: repeat(2, 1fr);
     }
+  
 
     }
+
+@media only screen and (max-width: 1190px) {
+    .review-page-h1 {
+        padding-top: 50px;
+    }
+}
   
   
   @media only screen and (max-width: 768px) {
     .review-page-container {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    
 }
 
 

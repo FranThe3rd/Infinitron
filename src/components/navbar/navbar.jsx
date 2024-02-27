@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { List } from 'phosphor-react';
 import logo from '../../assets/home-imgs/infinitron-logo.png';
 import { User, ShoppingCart, MagnifyingGlass } from 'phosphor-react';
@@ -8,6 +8,8 @@ import { Link } from "react-scroll";
 import './navbar.css';
 
 const Navbar = () => {
+    const location = useLocation();
+
     const [showNavbar, setShowNavbar] = useState(false);
 
     const handleShowNavbar = () => {
@@ -32,10 +34,20 @@ const Navbar = () => {
                             <NavLink to="/review-page">Reviews</NavLink>
                         </li>
                         <li>
-                            <Link to="bestsellers"  spy={true} smooth={true} duration={1000} style={{ cursor: "pointer", color: 'white' }}>Best Sellers</Link>
+                            {location.pathname === "/" ? (
+                                <Link to="bestsellers" spy smooth>
+                                    Best Sellers
+                                </Link>
+                            ) : (
+                                <NavLink to="/">
+                                    Best Sellers
+                                </NavLink>
+                                
+                                
+                            )}
                         </li>
                         <li>
-                            <NavLink  to='/'><img className='home-logo' src={logo} alt="" /></NavLink>
+                            <NavLink to='/'><img className='home-logo' src={logo} alt="" /></NavLink>
                         </li>
                         <li>
                             <NavLink to="/contact-page">Financing</NavLink>
@@ -44,13 +56,13 @@ const Navbar = () => {
                             <NavLink to="/about-page" >About us</NavLink>
                         </li>
                         <li>
-                            <NavLink   className='search-icon' to="/contact"><MagnifyingGlass size={32} /></NavLink>
+                            <NavLink className='search-icon' to="/contact"><MagnifyingGlass size={32} /></NavLink>
                         </li>
                         <li>
                             <NavLink className='user-icon' to="/contact"><User size={32} /></NavLink>
                         </li>
                         <li>
-                            <NavLink  className='shopping-icon' to="/contact"><ShoppingCart size={32} /></NavLink>
+                            <NavLink className='shopping-icon' to="/contact"><ShoppingCart size={32} /></NavLink>
                         </li>
                     </ul>
                 </div>

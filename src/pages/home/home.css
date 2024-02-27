@@ -266,7 +266,7 @@
   .home-start-bttn {
     max-width: 70px;
     width: 100%;
-    font-size: 13px;
+    font-size: 12px;
   }
   .home-best-bttn {
     max-width: 70px;
@@ -311,7 +311,6 @@
   }
   .home-h2 {
     margin-left: 0px;
-
     text-align: left;
     top: 48%;
     left: 50%;
@@ -344,6 +343,55 @@
     top: 71%;
     left: 35%;
   }
+ 
+}
+
+
+
+
+@media only screen and (max-height: 800px) {
+ 
+  .home-bttn-container {
+    top: 60%;
+  }
+
+  .home-h1 {
+    top: 35%;
+  }
+  .home-h2 {
+    top: 43%;
+  }
+  
+}
+
+@media only screen and (max-height: 600px) {
+ 
+  .home-bttn-container {
+    top: 90%;
+  }
+
+  .home-h1 {
+    top: 50%;
+  }
+  .home-h2 {
+    top: 60%;
+  }
+  
+}
+
+@media only screen and (max-height: 400px) {
+ 
+  .home-bttn-container {
+    top: 110%;
+  }
+
+  .home-h1 {
+    top: 60%;
+  }
+  .home-h2 {
+    top: 80%;
+  }
+  
 }
 
 

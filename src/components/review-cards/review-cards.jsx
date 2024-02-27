@@ -45,8 +45,6 @@ export const ReviewCards = () => {
 
     ]
 
-
-
     return (
         <div className='review-cards'>
             <h1 className='review-title'>WE BUILD FOR THE BEST</h1>
