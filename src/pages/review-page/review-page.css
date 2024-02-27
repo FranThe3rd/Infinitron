@@ -1,0 +1,88 @@
+.review-page {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(91, 5, 178), blue);
+    align-items: center;
+}
+
+
+
+
+.review-page-h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: clamp(40px, 5vw, 60px);  
+
+}
+
+.review-page-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.review-page-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-page-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-page-card-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-page-card-header h4 {
+    margin: 0;
+}
+
+.review-page-stars {
+    font-size: 40px;
+    margin-left: 30px;
+    color: #FDDA0D;
+}
+
+.review-page-card-body {
+    margin-top: 10px;
+}
+
+.review-page-card-body p {
+    margin: 0;
+}
+
+
+
+@media only screen and (max-width: 1317px) {
+    .review-page-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .review-page-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
