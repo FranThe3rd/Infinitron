@@ -4,11 +4,13 @@ import Home from './pages/home/home'
 import Navbar from './components/navbar/navbar'
 import Ad from './components/ad/ad'
 import ReviewPage from './pages/review-page/review-page';
+import PreLoader from './components/preloader/preloader';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <PreLoader />
         <Ad />
         <Navbar />
         <Routes>

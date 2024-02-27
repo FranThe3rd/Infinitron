@@ -7,7 +7,6 @@ import ReviewCards from '../../components/review-cards/review-cards';
 import BestSellers from '../../components/best-sellers/best-sellers';
 import Follow from '../../components/follow/follow';
 import SignUp from '../../components/sign-up/sign-up';
-
 import { Link } from "react-scroll";
 
 

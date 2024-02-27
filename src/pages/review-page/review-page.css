@@ -24,6 +24,7 @@
 }
 
 .review-page-card {
+    
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -49,7 +50,7 @@
 }
 
 .review-page-stars {
-    font-size: 40px;
+    font-size: clamp(20px, 2vw, 40px);
     margin-left: 30px;
     color: #FDDA0D;
 }
@@ -59,7 +60,7 @@
 }
 
 .review-page-card-body p {
-    margin: 0;
+    font-size: clamp(10px, 2vw, 18px);
 }
 
 
