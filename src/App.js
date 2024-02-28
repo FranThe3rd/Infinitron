@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Route, Routes, HashRouter} from 'react-router-dom';
 import Home from './pages/home/home'
 import Navbar from './components/navbar/navbar'
 import Ad from './components/ad/ad'
@@ -10,7 +10,7 @@ import PreLoader from './components/preloader/preloader';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
       <PreLoader />
         <Ad />
         <Navbar />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/finance-page" element={<FinancePage />} />
 
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );
