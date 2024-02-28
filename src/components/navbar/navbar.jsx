@@ -50,7 +50,7 @@ const Navbar = () => {
                             <NavLink to='/'><img className='home-logo' src={logo} alt="" /></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact-page">Financing</NavLink>
+                            <NavLink to="/finance-page">Financing</NavLink>
                         </li>
                         <li>
                             <NavLink to="/about-page" >About us</NavLink>
