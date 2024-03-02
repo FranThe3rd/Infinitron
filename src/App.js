@@ -6,6 +6,7 @@ import Ad from './components/ad/ad'
 import FinancePage from './pages/finance-page/finance-page';
 import ReviewPage from './pages/review-page/review-page';
 import PreLoader from './components/preloader/preloader';
+import AboutUsPage from './pages/about-us-page/about-us-page';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/review-page" element={<ReviewPage />} />
           <Route path="/finance-page" element={<FinancePage />} />
+          <Route path="/about-page" element={<AboutUsPage />} />
 
         </Routes>
       </HashRouter>

@@ -1,0 +1,161 @@
+
+.about-us-page {
+    padding-top: 200px;
+    background-image: linear-gradient(to bottom right, rgb(115, 44, 237) 50%, rgb(72, 0, 126) 50%);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    animation: opacityIn 1s ease-in-out;
+}
+
+.about-us-page-grid {
+    
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-us-page-text-one  {
+    max-width: 600px;
+}
+
+
+.about-us-page-text-one h1 {
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 130px;
+    font-family: 'Evogria',sans-serif;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    font-size: clamp(30px, 5vw, 60px);
+}
+
+.about-us-page-text-one p {
+    font-family: 'Poppins',sans-serif;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    font-size: clamp(15px, 5vw, 18px);
+
+}
+
+.about-us-page-img-one {
+    filter: drop-shadow(5px -5px 4px #7e3ee4); 
+    max-width: 700px;
+    width: 100%;
+
+}
+
+.about-us-page-track {
+    text-align: center;
+    width: 50%;
+}
+
+.about-us-page-track h1 {
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Evogria',sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: clamp(30px, 5vw, 60px);
+
+}
+
+.about-us-page-track h2 {
+    font-family: 'Poppins',sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: clamp(14px, 3vw, 18px);
+
+}
+
+.about-us-track-button {
+
+}
+
+.about-us-track-button {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 220px;
+    width: 100%;
+    max-height: 100px;
+    height: 110%;
+}
+
+
+
+.about-us-track-button {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(133, 7, 206);
+    --btn-bg-2: rgb(220, 21, 200);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(197, 8, 109, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .about-us-track-button:hover {
+    background-position: right top;
+  }
+  
+  .about-us-track-button:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+
+
+
+
+
+
+@media only screen and (max-width: 1190px) {
+    .about-us-page {
+        padding-top: 0px;
+
+    }
+}
+
+@media only screen and  (max-width: 1037px) {
+  
+    .about-us-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us-page-text-one h1 {
+        padding-top: 20px;
+
+    }
+
+    .about-us-page-grid > :nth-child(2) {
+        order: -1;
+    }
+    .about-us-page-grid > :nth-child(5) {
+        order: 6;
+    }
+
+    .about-us-page-grid > :nth-child(6) {
+        order: 5;
+    }
+
+    .about-us-page-track {
+        border-top: #ef07df 2px solid;
+        width: 80%;
+    }
+
+
+  
+
+    
+
+}
