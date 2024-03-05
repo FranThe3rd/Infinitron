@@ -24,26 +24,28 @@ const LevelUp = () => {
                         <div className='level-up-good'>
 
                             <h1>GOOD</h1>
-                            <h1>RTX 4060</h1>
-                            <h1>16GB RAM</h1>
-                            <h1>1TB SSD</h1>
-                            <h1>Intel Core i5</h1>
+                            <h1 style={{color: 'green'}}>RTX 4060</h1>
+                            <h1 style={{color: 'red'}}>Intel Core i5</h1>
+                            <h1 style={{color: 'blue'}}>16GB RAM</h1>
+                            <h1 style={{color: 'purple'}}>1TB SSD</h1>
                           
                         </div>
                         <div className='level-up-good'>
                             <h1>BETTER</h1>
-                            <h1>RTX 4070</h1>
-                            <h1>32GB RAM</h1>
-                            <h1>2TB SSD</h1>
-                            <h1>Intel Core i7</h1>
+                            
+                            <h1 style={{color: 'green'}}>RTX 4070</h1>
+                            <h1 style={{color: 'red'}}>Intel Core i7</h1>
+
+                            <h1 style={{color: 'blue'}}>32GB RAM</h1>
+                            <h1 style={{color: 'purple'}}>2TB SSD</h1>
                             
                         </div>
                         <div className='level-up-good'>
                             <h1>BEST</h1>
-                            <h1>RTX 4080</h1>
-                            <h1>64GB RAM</h1>
-                            <h1>4TB SSD</h1>
-                            <h1>Intel Core i9</h1>
+                            <h1 style={{color: 'green'}}>RTX 4080</h1>
+                            <h1 style={{color: 'red'}}>Intel Core i9</h1>
+                            <h1 style={{color: 'blue'}}>64GB RAM</h1>
+                            <h1 style={{color: 'purple'}}>4TB SSD</h1>
                             
                         </div>
                         <h3 className='level-up-good-h3'>Starting at $1,280
