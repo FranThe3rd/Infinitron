@@ -1,6 +1,6 @@
 import React from 'react'
 import './finance-page.css'
-import financeMain from '../../assets/finance-page-imgs/finance-main.png'
+import financeMain from '../../assets/finance-page-imgs/finance-main2.png'
 import financeOne from '../../assets/finance-page-imgs/1.png'
 import financeTwo from '../../assets/finance-page-imgs/2.png'
 import SignUp from '../../components/sign-up/sign-up'

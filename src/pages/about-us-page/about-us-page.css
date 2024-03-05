@@ -7,7 +7,6 @@
     height: 100%;
     display: grid;
     place-items: center;
-    animation: opacityIn 1s ease-in-out;
 }
 
 .about-us-page-grid {
@@ -41,6 +40,8 @@
 }
 
 .about-us-page-img-one {
+    animation: opacityIn 2s ease-in-out;
+
     filter: drop-shadow(5px -5px 4px #7e3ee4); 
     max-width: 700px;
     width: 100%;
@@ -151,6 +152,8 @@
     .about-us-page-track {
         border-top: #ef07df 2px solid;
         width: 80%;
+        border-bottom: #ef07df 2px solid;
+
     }
 
 

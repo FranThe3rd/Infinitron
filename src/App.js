@@ -7,6 +7,7 @@ import FinancePage from './pages/finance-page/finance-page';
 import ReviewPage from './pages/review-page/review-page';
 import PreLoader from './components/preloader/preloader';
 import AboutUsPage from './pages/about-us-page/about-us-page';
+import SignUp from './components/sign-up/sign-up';
 
 function App() {
   return (

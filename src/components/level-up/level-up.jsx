@@ -24,22 +24,27 @@ const LevelUp = () => {
                         <div className='level-up-good'>
 
                             <h1>GOOD</h1>
-                            <h2>"Embark on your gaming journey with the Infinitron Quantum Nova Gaming PC, equipped with the formidable RTX 4060 graphics card. Engineered by Infinitron to deliver reliable gaming performance at an accessible price point, the Quantum Nova is powered by a robust CPU and optimized for smooth gameplay at 1080p resolution. With sleek design and efficient cooling, the Quantum Nova ensures an immersive gaming experience for entry-level gamers.
-
-                                "</h2>
+                            <h1>RTX 4060</h1>
+                            <h1>16GB RAM</h1>
+                            <h1>1TB SSD</h1>
+                            <h1>Intel Core i5</h1>
+                          
                         </div>
                         <div className='level-up-good'>
                             <h1>BETTER</h1>
-                            <h2>"Take your gaming to the next level with the Infinitron Quantum Eclipse Gaming PC, featuring the powerful RTX 4070 Super graphics card. Designed for enthusiasts seeking exceptional performance, the Quantum Eclipse combines cutting-edge technology with high-resolution gaming capabilities. With Infinitron's attention to detail and advanced cooling solutions, the Quantum Eclipse delivers a seamless gaming experience for discerning gamers who demand top-tier performance.
-
-                                "
-                            </h2>
+                            <h1>RTX 4070</h1>
+                            <h1>32GB RAM</h1>
+                            <h1>2TB SSD</h1>
+                            <h1>Intel Core i7</h1>
+                            
                         </div>
                         <div className='level-up-good'>
                             <h1>BEST</h1>
-                            <h2>"Experience gaming supremacy with the Infinitron Quantum Titan Gaming PC, showcasing the elite RTX 4080 Super graphics card. Crafted to dominate the gaming landscape, the Quantum Titan sets the standard for premium gaming experiences. With unparalleled performance and stunning visual fidelity, this powerhouse is designed for gamers who demand the absolute best. Infinitron's commitment to innovation and quality shines through in every aspect of the Quantum Titan, making it the ultimate choice for elite gamers worldwide.
-                                "
-                            </h2>
+                            <h1>RTX 4080</h1>
+                            <h1>64GB RAM</h1>
+                            <h1>4TB SSD</h1>
+                            <h1>Intel Core i9</h1>
+                            
                         </div>
                         <h3 className='level-up-good-h3'>Starting at $1,280
                             Or as low as $41.30 monthly*</h3>
