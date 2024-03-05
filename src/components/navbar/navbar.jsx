@@ -33,7 +33,7 @@ const Navbar = () => {
                         <li>
                             <NavLink to="/review-page">Reviews</NavLink>
                         </li>
-                        <li>
+                        <li className='bestsellers-temp'>
                             {location.pathname === "/" ? (
                                 <Link to="bestsellers" spy smooth>
                                     Best Sellers
@@ -46,23 +46,26 @@ const Navbar = () => {
                                 
                             )}
                         </li>
-                        <li>
+                        <li className='home-nav-temp'>
+                            <NavLink onClick={handleShowNavbar} to="/">Home</NavLink>
+                        </li>
+                        <li className='home-logo-temp'>
                             <NavLink to='/'><img className='home-logo' src={logo} alt="" /></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/finance-page">Financing</NavLink>
+                            <NavLink onClick={handleShowNavbar} to="/finance-page">Financing</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about-page" >About us</NavLink>
+                            <NavLink onClick={handleShowNavbar} to="/about-page" >About us</NavLink>
                         </li>
                         <li>
-                            <NavLink className='search-icon' to="/contact"><MagnifyingGlass size={32} /></NavLink>
+                            <NavLink onClick={handleShowNavbar} className='search-icon' to="/contact"><MagnifyingGlass size={32} /></NavLink>
                         </li>
                         <li>
-                            <NavLink className='user-icon' to="/contact"><User size={32} /></NavLink>
+                            <NavLink onClick={handleShowNavbar} className='user-icon' to="/contact"><User size={32} /></NavLink>
                         </li>
                         <li>
-                            <NavLink className='shopping-icon' to="/contact"><ShoppingCart size={32} /></NavLink>
+                            <NavLink onClick={handleShowNavbar} className='shopping-icon' to="/contact"><ShoppingCart size={32} /></NavLink>
                         </li>
                     </ul>
                 </div>

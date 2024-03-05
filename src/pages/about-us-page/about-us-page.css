@@ -128,6 +128,16 @@
 }
 
 @media only screen and  (max-width: 1037px) {
+
+    .about-us-page-text-one h1 {
+        border-top: #ef07df 2px solid;
+    
+    }
+
+    .about-us-page-img-one {
+        margin-bottom: 20px;
+    
+    }
   
     .about-us-page-grid {
         grid-template-columns: 1fr;

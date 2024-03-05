@@ -92,6 +92,13 @@ z-index: 99999;
  width: 100%;
 }
 
+.home-nav-temp {
+  display: none;
+}
+
+.shopping-icon {
+  margin-right: 0px;
+}
 
 
 
@@ -106,6 +113,23 @@ z-index: 99999;
         position: relative;
         text-align: center;
     }
+
+    .home-nav-temp {
+        display: block;
+    }
+
+    .home-logo-temp {
+      display: none;
+    }
+
+    .bestsellers-temp {
+      display: none;
+    }
+    .shopping-icon {
+      margin-right: 60px;
+    }
+    
+
 
 }
 
@@ -157,4 +181,7 @@ z-index: 99999;
    margin-right: unset;
    margin-top: 22px;
  }
+ .shopping-icon {
+  margin-right: 30px;
+}
 }
