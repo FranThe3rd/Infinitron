@@ -59,12 +59,37 @@
 
 }
 
-.level-up-start-bttn:hover {
-    transition: 0.3s ease-in-out;
-    background-color: #000;
-    color: #f9f9f9;
 
-}
+.level-up-start-bttn {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(133, 7, 206);
+    --btn-bg-2: rgb(220, 21, 200);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(197, 8, 109, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .level-up-start-bttn:hover {
+    background-position: right top;
+  }
+  
+  .level-up-start-bttn:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
 
 .level-up-image {
     margin-top: 40px;
@@ -118,28 +143,38 @@
 }
 
 
+
+
 .level-up-view-bttn {
-    text-align: center;
-    display: block;
-    font-weight: 200;
-    background-color: #f9f9f9;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(133, 7, 206);
+    --btn-bg-2: rgb(220, 21, 200);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    font-family: 'Poppins',sans-serif;
-    
-
-}
-
-.level-up-view-bttn:hover {
-    transition: 0.3s ease-in-out;
-    background-color: #000;
-    color: #f9f9f9;
-}
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(197, 8, 109, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .level-up-view-bttn:hover {
+    background-position: right top;
+  }
+  
+  .level-up-view-bttn:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
 
 @media only screen and  (max-width: 1738px) {
     .level-up-good h2 {

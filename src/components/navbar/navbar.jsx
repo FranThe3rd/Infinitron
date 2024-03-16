@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className={`nav-elements ${showNavbar && 'active'}`}>
                     <ul>
                         <li>
-                            <NavLink to="/build-page">Start Build</NavLink>
+                            <NavLink to="/start-build-page">Start Build</NavLink>
                         </li>
                         <li>
                             <NavLink to="/review-page">Reviews</NavLink>
@@ -67,6 +67,7 @@ const Navbar = () => {
                         <li>
                             <NavLink onClick={handleShowNavbar} className='shopping-icon' to="/contact"><ShoppingCart size={32} /></NavLink>
                         </li>
+    
                     </ul>
                 </div>
             </div>

@@ -40,7 +40,7 @@
 }
 
 .about-us-page-img-one {
-    animation: opacityIn 2s ease-in-out;
+    animation: opacityIn .5s ease-in-out;
 
     filter: drop-shadow(5px -5px 4px #7e3ee4); 
     max-width: 700px;
@@ -115,9 +115,20 @@
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
 
+  @media only screen and (min-width: 2500px) {
+    .about-us-page-grid {
+        width: 40%;
+
+    }
+}
 
 
+  @media only screen and (min-width: 2000px) {
+    .about-us-page-grid {
+        width: 60%;
 
+    }
+}
 
 
 @media only screen and (max-width: 1190px) {
