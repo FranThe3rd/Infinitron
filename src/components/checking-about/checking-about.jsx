@@ -5,7 +5,7 @@ const CheckingAbout = () => {
   return (
     <div className='checking-about'>
         <h1 >CHECKOUT OUR LATEST BUILD AND MAKE IT YOUR OWN!
-            <button className='checking-about-view'>
+            <button className='checking-about-view-bttn'>
                 VIEW OUR LATEST BUILD
             </button>
 </h1>
