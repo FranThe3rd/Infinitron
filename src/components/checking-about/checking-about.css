@@ -17,6 +17,7 @@
     font-style: italic;
     font-weight: 100;
     font-size: clamp(20px, 3vw, 50px);
+    width: 80%;
     }
 
 .checking-about-view-bttn {
