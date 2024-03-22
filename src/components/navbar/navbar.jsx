@@ -28,10 +28,10 @@ const Navbar = () => {
                 <div className={`nav-elements ${showNavbar && 'active'}`}>
                     <ul>
                         <li>
-                            <NavLink to="/start-build-page">Start Build</NavLink>
+                            <NavLink onClick={handleShowNavbar} to="/start-build-page">Start Build</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/review-page">Reviews</NavLink>
+                            <NavLink onClick={handleShowNavbar} to="/review-page">Reviews</NavLink>
                         </li>
                         <li className='bestsellers-temp'>
                             {location.pathname === "/" ? (

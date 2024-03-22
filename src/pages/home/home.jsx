@@ -8,6 +8,8 @@ import BestSellers from '../../components/best-sellers/best-sellers';
 import Follow from '../../components/follow/follow';
 import SignUp from '../../components/sign-up/sign-up';
 import { Link } from "react-scroll";
+import { Link as Links } from "react-router-dom";
+
 
 
 export const Home = () => {
@@ -19,19 +21,24 @@ export const Home = () => {
             <h1 className='home-h1'>BEST GAMING PCs</h1>
             <h2 className='home-h2'>Optimized For Your Budget</h2>
             <div className='home-bttn-container'>
-                <button className='home-start-bttn'>START BUILD</button>
+                <Links className='home-start-bttn-links' to='/start-build-page'>                <button className='home-start-bttn'>START BUILD</button>
+</Links>
                 <Link className='best-scroll' to="bestsellers" spy={true} smooth={true} duration={1000}>
                     <button className="home-best-bttn">
                         BEST SELLERS
                     </button>
-                </Link>            
+                </Link>
             </div>
             <InfoCards />
-            <button className='home-start-bttn2'>START BUILD</button>
-            
+
+            <Links className='home-start-bttn2-links' to='/start-build-page'>
+                <button className='home-start-bttn2'>START BUILD</button>
+            </Links>
+
+
             <ReviewCards />
             <div id='bestsellers'>
-            <BestSellers />
+                <BestSellers />
             </div>
             <Follow />
             <SignUp />

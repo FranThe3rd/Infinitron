@@ -4,6 +4,7 @@ import logo1 from '../../assets/pc-specs-logo/logo1.png'
 import logo2 from '../../assets/pc-specs-logo/logo2.png'
 import logo3 from '../../assets/pc-specs-logo/logo3.png'
 import logo4 from '../../assets/pc-specs-logo/logo4.png'
+import {Link as Links} from 'react-router-dom'
 
 
 const ProgressBar = ({ label, width }) => {
@@ -98,7 +99,7 @@ const BestSellers = () => {
                             <ProgressBar label="CPU" width={best.cpu} />
                             <ProgressBar label="RAM" width={best.ram} />
                             <ProgressBar label="HDD" width={best.hdd} />
-                            <button className='best-button'>VIEW BUILD</button>
+                            <Links className='best-button-links' to='start-build-page'><button className='best-button'>VIEW BUILD</button></Links>
                         </div>
                     );
                 })}

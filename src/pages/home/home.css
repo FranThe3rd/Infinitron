@@ -204,6 +204,16 @@
     width: 100%;
   }
 
+  .home-start-bttn2-links {
+    
+    text-decoration: none; /* Add this line to remove text underline */
+  }
+  
+  .home-start-bttn-links {
+    width: 100%;
+
+  }
+
 
 
 
