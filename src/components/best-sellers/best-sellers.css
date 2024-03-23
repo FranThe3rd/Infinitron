@@ -104,8 +104,8 @@
 
   .best-button {
     --clr-font-main: hsla(0 0% 20% / 100);
-    --btn-bg-1: rgb(7, 206, 57);
-    --btn-bg-2: rgb(16, 240, 184);
+    --btn-bg-1: rgb(7, 135, 39);
+    --btn-bg-2: rgb(38, 207, 16);
     --btn-bg-color: hsla(360 100% 100% / 1);
     --radii: 0.5em;
     cursor: pointer;
@@ -128,7 +128,7 @@
     background-position: right top;
   }
   
-  .best-button:is(:focus, :focus-visible, :active) {
+  .best-button {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }

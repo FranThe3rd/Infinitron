@@ -86,7 +86,7 @@
     background-position: right top;
   }
   
-  .level-up-start-bttn:is(:focus, :focus-visible, :active) {
+  .level-up-start-bttn {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -146,6 +146,7 @@
 
 
 .level-up-view-bttn {
+    width: 100%;
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: rgb(133, 7, 206);
     --btn-bg-2: rgb(220, 21, 200);
@@ -171,9 +172,13 @@
     background-position: right top;
   }
   
-  .level-up-view-bttn:is(:focus, :focus-visible, :active) {
+  .level-up-view-bttn {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+
+  .level-up-view-bttn-links {
+    width: 100%;
   }
 
 @media only screen and  (max-width: 1738px) {

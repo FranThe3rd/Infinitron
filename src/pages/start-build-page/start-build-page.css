@@ -51,7 +51,7 @@
     background-position: right top;
   }
   
-  .start-build-bttn-contact:is(:focus, :focus-visible, :active) {
+  .start-build-bttn-contact {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -83,7 +83,7 @@
     background-position: right top;
   }
   
-  .start-build-bttn-checkout:is(:focus, :focus-visible, :active) {
+  .start-build-bttn-checkout {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -296,7 +296,7 @@
 
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1292px) {
     .start-build-specs-grid  {
       
       margin-bottom: 400px;

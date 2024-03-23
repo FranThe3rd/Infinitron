@@ -1,6 +1,7 @@
 import React from 'react'
 import './level-up.css'
 import levelUpImage from '../../assets/about-us-page-img/level-up-one.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -55,9 +56,17 @@ const LevelUp = () => {
                         <h3 className='level-up-good-h3'>Starting at $2,399
                             Or as low as $77.41 monthly*</h3>
 
-                        <button className='level-up-view-bttn'>VIEW BUILD</button>
-                        <button className='level-up-view-bttn'>VIEW BUILD</button>
-                        <button className='level-up-view-bttn'>VIEW BUILD</button>
+                            <Link className='level-up-view-bttn-links' to='/start-build-page'>
+                                <button className='level-up-view-bttn'>VIEW BUILD</button>
+                            </Link>
+                            <Link className='level-up-view-bttn-links' to='/start-build-page'>
+                                <button className='level-up-view-bttn'>VIEW BUILD</button>
+                            </Link>
+                            <Link className='level-up-view-bttn-links' to='/start-build-page'>
+                                <button className='level-up-view-bttn'>VIEW BUILD</button>
+                            </Link>
+
+              
 
 
 

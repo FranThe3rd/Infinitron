@@ -74,7 +74,7 @@
     background-position: right top;
   }
   
-  .sign-button:is(:focus, :focus-visible, :active) {
+  .sign-button {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }

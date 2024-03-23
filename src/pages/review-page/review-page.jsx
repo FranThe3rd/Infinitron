@@ -16,10 +16,10 @@ export const ReviewPage = () => {
 
     const ReviewersData = [
         {
-            name: 'Maria Ramirez',
+            name: 'Marques Enriquez',
             stars: '★★★★★',
             pic: reviewerOne,
-            thoughts: "Infinitron's GOOD option with the RTX 4060 truly delivers on its promise, a budget-friendly gaming PC that doesn't compromise on performance.",
+            thoughts: "Just received my PC, all within 3 days of ordering. Superb packaging, and the assembly was nice and simple. I got the RTX 4080, and the performance is unlike anything I’ve seen or tried before.",
             date: '2/14/24'
         },
         {

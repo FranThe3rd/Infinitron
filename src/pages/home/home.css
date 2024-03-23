@@ -120,7 +120,7 @@
     background-position: right top;
   }
   
-  .home-start-bttn:is(:focus, :focus-visible, :active) {
+  .home-start-bttn {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -129,7 +129,7 @@
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: rgb(236, 236, 236);
     --btn-bg-2: rgb(233, 233, 233);
-    --btn-bg-color: hsla(360 100% 100% / 1);
+    --btn-bg-color: rgb(0, 0, 0);
     --radii: 0.5em;
     cursor: pointer;
     padding: 0.9em 1.4em;
@@ -151,7 +151,7 @@
     background-position: right top;
   }
   
-  .home-best-bttn:is(:focus, :focus-visible, :active) {
+  .home-best-bttn {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -186,7 +186,7 @@
     background-position: right top;
   }
   
-  .home-start-bttn2:is(:focus, :focus-visible, :active) {
+  .home-start-bttn2 {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }

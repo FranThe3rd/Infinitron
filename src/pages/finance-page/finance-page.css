@@ -59,7 +59,7 @@
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: rgb(133, 7, 206);
     --btn-bg-2: rgb(220, 21, 200);
-    --btn-bg-color: hsla(360 100% 100% / 1);
+    --btn-bg-color: hsla(220 100% 100% / 1);
     --radii: 0.5em;
     cursor: pointer;
     padding: 0.9em 1.4em;
@@ -81,7 +81,7 @@
     background-position: right top;
   }
   
-  .finance-page-button:is(:focus, :focus-visible, :active) {
+  .finance-page-button {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
@@ -188,7 +188,7 @@
     background-position: right top;
   }
   
-  .finance-page-buttont-two:is(:focus, :focus-visible, :active) {
+  .finance-page-button-two {
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
