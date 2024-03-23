@@ -1,9 +1,8 @@
 import React, {useState,useEffect} from 'react';
 import { Link } from 'react-router-dom';
-
-
-
 import './start-build-page.css'
+
+// Good
 
 import i5 from '../../assets/specs-imgs/i5-cpu.png'
 import ram16 from '../../assets/specs-imgs/16gb-ram.png'
@@ -21,9 +20,18 @@ import gamingPc3 from '../../assets/specs-imgs/GamingPC3.png'
 import gamingPc4 from '../../assets/specs-imgs/GamingPC4.png'
 import SignUp from '../../components/sign-up/sign-up'
 
+// Better
+import i7 from '../../assets/specs-imgs/i7-cpu.png'
+import ram32 from '../../assets/specs-imgs/32gb-ram.png'
+import cooler2 from '../../assets/specs-imgs/cooler2.png'
+import motherboard2 from '../../assets/specs-imgs/motherboard2.png'
+
+
 const StartBuild = () => {
 
-    const specs = [
+    const specsGood = [
+        
+       
         {
             name: 'INTEL CORE i5 10th GEN',
             img: i5,
@@ -32,6 +40,174 @@ const StartBuild = () => {
         },
         {
             name: '16GB DDR',
+            img: ram16,
+            price: 79.99, 
+        },
+        {
+            name: 'COOLER MASTER HYPER 212 EVO',
+            img: cooler,
+            price: 39.99, 
+        },
+        {
+            name: 'NZXT H510',
+            img: pcCase,
+            price: 99.99, 
+        },
+        {
+            name: 'ASUS PRIME Z490-P',
+            img: motherboard,
+            price: 119.99, 
+        },
+        {
+            name: 'NVIDIA RTX 4060',
+            img: rtx4060,
+            price: 599.99, 
+        },
+        {
+            name: 'WINDOWS 10',
+            img: windows10,
+            price: 109.99, 
+        },
+        {
+            name: '750W ATX 80 PLUS GOLD',
+            img: watts750,
+            price: 179.99, 
+        },
+        {
+            name: '1TB SSD',
+            img: tb1,
+            price: 119.99, // Adjusted price
+        },
+        {
+            name: 'RGB FANS',
+            img: fans,
+            price: 49.99, // Adjusted price
+        },
+    ];
+
+    const specsBetter = [
+        
+       
+        {
+            name: 'INTEL CORE i7 10th GEN',
+            img: i7,
+            price: 250.99, 
+            
+        },
+        {
+            name: '32GB DDR',
+            img: ram32,
+            price: 79.99, 
+        },
+        {
+            name: 'NZXT KRAKEN X63 LIQUID COOLER',
+            img: cooler2,
+            price: 39.99, 
+        },
+        {
+            name: 'NZXT H510',
+            img: pcCase,
+            price: 99.99, 
+        },
+        {
+            name: 'ASUS ROG Strix Z490-E',
+            img: motherboard2,
+            price: 119.99, 
+        },
+        {
+            name: 'NVIDIA RTX 4070',
+            img: rtx4060,
+            price: 599.99, 
+        },
+        {
+            name: 'WINDOWS 10',
+            img: windows10,
+            price: 109.99, 
+        },
+        {
+            name: '800W ATX 80 PLUS GOLD',
+            img: watts750,
+            price: 179.99, 
+        },
+        {
+            name: '1.5TB SSD',
+            img: tb1,
+            price: 119.99, // Adjusted price
+        },
+        {
+            name: 'RGB LED FANS',
+            img: fans,
+            price: 49.99, // Adjusted price
+        },
+    ];
+
+    const specsBest = [
+        
+       
+        {
+            name: 'INTEL CORE i8 10th GEN',
+            img: i7,
+            price: 250.99, 
+            
+        },
+        {
+            name: '32GB DDR',
+            img: ram16,
+            price: 79.99, 
+        },
+        {
+            name: 'COOLER MASTER HYPER 212 EVO',
+            img: cooler,
+            price: 39.99, 
+        },
+        {
+            name: 'NZXT H510',
+            img: pcCase,
+            price: 99.99, 
+        },
+        {
+            name: 'ASUS PRIME Z490-P',
+            img: motherboard,
+            price: 119.99, 
+        },
+        {
+            name: 'NVIDIA RTX 4060',
+            img: rtx4060,
+            price: 599.99, 
+        },
+        {
+            name: 'WINDOWS 10',
+            img: windows10,
+            price: 109.99, 
+        },
+        {
+            name: '750W ATX 80 PLUS GOLD',
+            img: watts750,
+            price: 179.99, 
+        },
+        {
+            name: '1TB SSD',
+            img: tb1,
+            price: 119.99, // Adjusted price
+        },
+        {
+            name: 'RGB FANS',
+            img: fans,
+            price: 49.99, // Adjusted price
+        },
+    ];
+
+    const specsUltimate = [
+        
+       
+        {
+            name: 'INTEL CORE i9 10th GEN',
+            img: i7,
+            price: 250.99, 
+            
+        },
+        {
+            name: '64gb DDR',
             img: ram16,
             price: 79.99, 
         },
@@ -95,11 +271,26 @@ const StartBuild = () => {
     const [priceMultiplier, setPriceMultiplier] = useState(1);
     const [totalPrice, setTotalPrice] = useState(0);
     const [choosePC, setChoosePC] = useState(0);
+    const [specList, setSpecList] = useState(specsGood);
+
+    const toggleSpecs = () => {
+        if (priceMultiplier === 1) {
+            setSpecList(specsGood);
+        } else if (priceMultiplier === 1.25) {
+            setSpecList(specsBetter);
+        }
+        else if (priceMultiplier === 1.5) {
+            setSpecList(specsBest);
+        }
+        else if (priceMultiplier === 2) {
+            setSpecList(specsUltimate);
+        }
+    }
 
 
     const calculateTotalPrice = () => {
         let total = 0;
-        specs.forEach(spec => {
+        specsGood.forEach(spec => {
             const price = spec.price * priceMultiplier;
             total += price;
         });
@@ -117,6 +308,11 @@ const StartBuild = () => {
     useEffect(() => {
         calculateTotalPrice();
     }, [priceMultiplier]);
+
+    useEffect(() => {
+        toggleSpecs();
+    }, [specList]);
+
 
    
 
@@ -139,10 +335,10 @@ const StartBuild = () => {
                 </div>
             </div>
             <div className='start-build-type-grid'>
-                <button onClick={() => {handleButtonClick(1); handleChoosePC(0)}  }>Good</button>
-                <button onClick={() => {handleButtonClick(1.25); handleChoosePC(1)}}>Better</button>
-                <button onClick={() => {handleButtonClick(1.5); handleChoosePC(2)}}>Best</button>
-                <button onClick={() => {handleButtonClick(2); handleChoosePC(3)}}>Ultimate</button>
+                <button onClick={() => {handleButtonClick(1); handleChoosePC(0); toggleSpecs()}  }>Good</button>
+                <button onClick={() => {handleButtonClick(1.25); handleChoosePC(1); toggleSpecs()}}>Better</button>
+                <button onClick={() => {handleButtonClick(1.5); handleChoosePC(2); toggleSpecs()}}>Best</button>
+                <button onClick={() => {handleButtonClick(2); handleChoosePC(3); toggleSpecs()}}>Ultimate</button>
             </div>
 
             <div className='start-build-specs-grid'>
@@ -169,7 +365,7 @@ const StartBuild = () => {
                 <div className='start-build-specs'>
 
                     {
-                        specs.map((spec, index) => {
+                        specList.map((spec, index) => {
                             const price = spec.price * priceMultiplier;
                             return (
                                 <div key={index} className={`specs-info${index === 0 ? ' no-border-top' : ''}`}>
