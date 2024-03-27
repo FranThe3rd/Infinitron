@@ -39,6 +39,23 @@
     background-color: rgba(128, 0, 128, 0.6);
 }
 
+.info-card h2{
+    font-size: clamp(20px, 2vw, 40px);
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+    text-align: center;
+
+}
+.info-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(10px, 1.5vw, 20px);
+    font-weight: 100;
+    color: white;
+    text-align: center;
+
+}
+
 @media (max-width: 1600px) {
     .info-cards {
         margin-left: 0px;
@@ -75,6 +92,14 @@
         width: 100%;
 
     }
+    .info-card h2 {
+        font-size: 30px;
+    }
+    .info-card p {
+        font-size: 20px;
+    }
+
+    
 
     
 } 
@@ -91,6 +116,12 @@
         height: 250px;
 
     }
+    .info-card h2 {
+        font-size: 30px;
+    }
+    .info-card p {
+        font-size: 15px;
+    }
     
 } 
 
@@ -98,31 +129,9 @@
 
 
 
-.info-card h2{
-    font-size: 40px;
-    font-weight: 100;
-    font-style: italic;
-    color: white;
-    text-align: center;
 
-}
-.info-card p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    color: white;
-    text-align: center;
 
-}
 
-@media screen and (max-width: 768px) {
-    .info-card h2 {
-        font-size: 30px;
-    }
-    .info-card p {
-        font-size: 15px;
-    }
-}
 
 
 
