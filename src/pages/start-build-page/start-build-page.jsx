@@ -33,6 +33,9 @@ import pcCase2 from '../../assets/specs-imgs/pc-case2.png'
 import cooler3 from '../../assets/specs-imgs/cooler3.png'
 import motherboard3 from '../../assets/specs-imgs/motherboard3.png'
 import pcCase3 from '../../assets/specs-imgs/pc-case3.png'
+import watts850 from '../../assets/specs-imgs/850watts.png'
+import rtx4080 from '../../assets/specs-imgs/rtx4080.png'
+import fans2 from '../../assets/specs-imgs/fans2.png'
 
 
 const StartBuild = () => {
@@ -87,7 +90,7 @@ const StartBuild = () => {
             price: 119.99, // Adjusted price
         },
         {
-            name: 'RGB FANS',
+            name: 'CM MASTERFANS RGB',
             img: fans,
             price: 49.99, // Adjusted price
         },
@@ -143,9 +146,9 @@ const StartBuild = () => {
             price: 119.99, // Adjusted price
         },
         {
-            name: 'RGB LED FANS',
+            name: 'CM MASTERFANS RGB',
             img: fans,
-            price: 49.99, // Adjusted price
+            price: 39.99, // Adjusted price
         },
     ];
 
@@ -180,7 +183,7 @@ const StartBuild = () => {
         },
         {
             name: 'NVIDIA RTX 4080',
-            img: rtx4060,
+            img: rtx4080,
             price: 599.99, 
         },
         {
@@ -189,8 +192,8 @@ const StartBuild = () => {
             price: 109.99, 
         },
         {
-            name: '750W ATX 80 PLUS GOLD',
-            img: watts750,
+            name: 'ROG-STRIX-850W',
+            img: watts850,
             price: 179.99, 
         },
         {
@@ -199,8 +202,8 @@ const StartBuild = () => {
             price: 119.99, // Adjusted price
         },
         {
-            name: 'RGB FANS',
-            img: fans,
+            name: 'Halo A-RGB PWM Fans',
+            img: fans2,
             price: 49.99, // Adjusted price
         },
     ];

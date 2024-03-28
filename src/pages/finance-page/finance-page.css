@@ -5,13 +5,14 @@
 
 
 .finance-page-img {
-  animation: transitionIn 1s ease-in-out;
 
     width: 100vw;
     height: 100vh;
       filter: brightness(50%);
       position: relative;
       z-index: -9999;
+      animation: transitionIn 1s ease-in-out;
+
 }
 
 
