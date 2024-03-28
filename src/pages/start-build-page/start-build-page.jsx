@@ -7,7 +7,7 @@ import './start-build-page.css'
 import i5 from '../../assets/specs-imgs/i5-cpu.png'
 import ram16 from '../../assets/specs-imgs/16gb-ram.png'
 import cooler from '../../assets/specs-imgs/cooler.png'
-import pcCase from '../../assets/specs-imgs/pc-case.png'
+import pcCase1 from '../../assets/specs-imgs/pc-case.png'
 import motherboard from '../../assets/specs-imgs/motherboard.png'
 import rtx4060 from '../../assets/specs-imgs/rtx4060.png'
 import windows10 from '../../assets/specs-imgs/windows10.png'
@@ -25,6 +25,14 @@ import i7 from '../../assets/specs-imgs/i7-cpu.png'
 import ram32 from '../../assets/specs-imgs/32gb-ram.png'
 import cooler2 from '../../assets/specs-imgs/cooler2.png'
 import motherboard2 from '../../assets/specs-imgs/motherboard2.png'
+import watts800 from '../../assets/specs-imgs/800watts.png'
+import rtx4070 from '../../assets/specs-imgs/rtx4070.png'
+import pcCase2 from '../../assets/specs-imgs/pc-case2.png'
+
+// Best
+import cooler3 from '../../assets/specs-imgs/cooler3.png'
+import motherboard3 from '../../assets/specs-imgs/motherboard3.png'
+import pcCase3 from '../../assets/specs-imgs/pc-case3.png'
 
 
 const StartBuild = () => {
@@ -49,8 +57,8 @@ const StartBuild = () => {
             price: 39.99, 
         },
         {
-            name: 'NZXT H510',
-            img: pcCase,
+            name: 'DARK CASTLE 5700g',
+            img: pcCase1,
             price: 99.99, 
         },
         {
@@ -105,8 +113,8 @@ const StartBuild = () => {
             price: 39.99, 
         },
         {
-            name: 'NZXT H510',
-            img: pcCase,
+            name: 'Periphio Terra',
+            img: pcCase2,
             price: 99.99, 
         },
         {
@@ -116,21 +124,21 @@ const StartBuild = () => {
         },
         {
             name: 'NVIDIA RTX 4070',
-            img: rtx4060,
+            img: rtx4070,
             price: 599.99, 
         },
         {
-            name: 'WINDOWS 10',
+            name: 'WINDOWS 10 Pro',
             img: windows10,
             price: 109.99, 
         },
         {
             name: '800W ATX 80 PLUS GOLD',
-            img: watts750,
+            img: watts800,
             price: 179.99, 
         },
         {
-            name: '1.5TB SSD',
+            name: '1.5 TB SSD',
             img: tb1,
             price: 119.99, // Adjusted price
         },
@@ -145,38 +153,38 @@ const StartBuild = () => {
         
        
         {
-            name: 'INTEL CORE i8 10th GEN',
+            name: 'INTEL CORE i7 13th GEN',
             img: i7,
             price: 250.99, 
             
         },
         {
             name: '32GB DDR',
-            img: ram16,
-            price: 79.99, 
+            img: ram32,
+            price: 66.66, 
         },
         {
-            name: 'COOLER MASTER HYPER 212 EVO',
-            img: cooler,
+            name: 'EVGA CLC 280',
+            img: cooler3,
             price: 39.99, 
         },
         {
-            name: 'NZXT H510',
-            img: pcCase,
+            name: 'MESHIFY C',
+            img: pcCase3,
             price: 99.99, 
         },
         {
-            name: 'ASUS PRIME Z490-P',
-            img: motherboard,
+            name: 'ASRock Z490 Taichi',
+            img: motherboard3,
             price: 119.99, 
         },
         {
-            name: 'NVIDIA RTX 4060',
+            name: 'NVIDIA RTX 4080',
             img: rtx4060,
             price: 599.99, 
         },
         {
-            name: 'WINDOWS 10',
+            name: 'WINDOWS 11',
             img: windows10,
             price: 109.99, 
         },
@@ -186,7 +194,7 @@ const StartBuild = () => {
             price: 179.99, 
         },
         {
-            name: '1TB SSD',
+            name: '2TB SSD',
             img: tb1,
             price: 119.99, // Adjusted price
         },
@@ -218,7 +226,7 @@ const StartBuild = () => {
         },
         {
             name: 'NZXT H510',
-            img: pcCase,
+            img: pcCase1,
             price: 99.99, 
         },
         {
