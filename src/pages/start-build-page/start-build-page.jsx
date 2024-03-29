@@ -37,6 +37,16 @@ import watts850 from '../../assets/specs-imgs/850watts.png'
 import rtx4080 from '../../assets/specs-imgs/rtx4080.png'
 import fans2 from '../../assets/specs-imgs/fans2.png'
 
+// Ultimate
+import cooler4 from '../../assets/specs-imgs/cooler4.png'
+import i9 from '../../assets/specs-imgs/i9-cpu.png'
+import watts900 from '../../assets/specs-imgs/900watts.png'
+import fans3 from '../../assets/specs-imgs/fans3.png'
+import ram64 from '../../assets/specs-imgs/64gb-ram.png'
+import pcCase4 from '../../assets/specs-imgs/pc-case4.png'
+import rtx4090 from '../../assets/specs-imgs/rtx4090.png'
+
+
 
 const StartBuild = () => {
 
@@ -212,54 +222,54 @@ const StartBuild = () => {
         
        
         {
-            name: 'INTEL CORE i9 10th GEN',
-            img: i7,
+            name: 'INTEL CORE i9 13th GEN',
+            img: i9,
             price: 250.99, 
             
         },
         {
-            name: '64gb DDR',
-            img: ram16,
+            name: '64GB DDR',
+            img: ram64,
             price: 79.99, 
         },
         {
-            name: 'COOLER MASTER HYPER 212 EVO',
-            img: cooler,
+            name: 'DARKROCK PX4',
+            img: cooler4,
             price: 39.99, 
         },
         {
-            name: 'NZXT H510',
-            img: pcCase1,
+            name: 'Y60 BLACK',
+            img: pcCase4,
             price: 99.99, 
         },
         {
-            name: 'ASUS PRIME Z490-P',
+            name: 'MSI MEG Z490 ACEP',
             img: motherboard,
             price: 119.99, 
         },
         {
-            name: 'NVIDIA RTX 4060',
-            img: rtx4060,
+            name: 'NVIDIA RTX 4090',
+            img: rtx4090,
             price: 599.99, 
         },
         {
-            name: 'WINDOWS 10',
+            name: 'WINDOWS 11 PRO',
             img: windows10,
             price: 109.99, 
         },
         {
-            name: '750W ATX 80 PLUS GOLD',
-            img: watts750,
+            name: 'Apevia ATX-SN 900W',
+            img: watts900,
             price: 179.99, 
         },
         {
-            name: '1TB SSD',
+            name: '3TB SSD',
             img: tb1,
             price: 119.99, // Adjusted price
         },
         {
-            name: 'RGB FANS',
-            img: fans,
+            name: 'SILENT WINGS 4',
+            img: fans3,
             price: 49.99, // Adjusted price
         },
     ];
