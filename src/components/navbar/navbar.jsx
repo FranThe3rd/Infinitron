@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { List } from 'phosphor-react';
 import logo from '../../assets/home-imgs/infinitron-logo.png';
-import { User, ShoppingCart, MagnifyingGlass } from 'phosphor-react';
+import { User, ShoppingCart, MagnifyingGlass,InstagramLogo } from 'phosphor-react';
 import { Link } from "react-scroll";
 
 import './navbar.css';
@@ -62,7 +62,7 @@ const Navbar = () => {
                             <NavLink onClick={handleShowNavbar} className='search-icon' to="/contact"><MagnifyingGlass size={32} /></NavLink>
                         </li>
                         <li>
-                            <NavLink onClick={handleShowNavbar} className='user-icon' to="/contact"><User size={32} /></NavLink>
+                            <NavLink onClick={handleShowNavbar} className='user-icon' to="https://github.com/FranThe3rd" target='_blank'><InstagramLogo size={32} /></NavLink>
                         </li>
                         <li>
                             <NavLink onClick={handleShowNavbar} className='shopping-icon' to="/contact"><ShoppingCart size={32} /></NavLink>
