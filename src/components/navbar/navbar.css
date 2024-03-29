@@ -138,6 +138,9 @@ z-index: 99999;
  .nav-elements ul li:not(:last-child) {
    margin-right: 30px;
  }
+ .shopping-icon {
+  margin-right: 30px;
+}
 }
 
 
@@ -181,7 +184,5 @@ z-index: 99999;
    margin-right: unset;
    margin-top: 22px;
  }
- .shopping-icon {
-  margin-right: 30px;
-}
+
 }

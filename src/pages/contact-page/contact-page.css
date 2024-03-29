@@ -1,0 +1,133 @@
+.contact-page {
+    padding-top: 200px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5b22b8, #3c1445);
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    animation: opacityIn .5s ease-in-out;
+    max-width: 700px;
+    max-height: 700px;
+    height: 90%;
+    border-radius: 10px;
+    width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #6628ca;
+    box-shadow: rgba(139, 0, 255, 0.4) 5px 5px, rgba(139, 0, 255, 0.3) 10px 10px, rgba(139, 0, 255, 0.2) 15px 15px, rgba(139, 0, 255, 0.1) 20px 20px, rgba(139, 0, 255, 0.05) 25px 25px;
+}
+
+.contact-form h1 {
+    font-size: clamp(20px, 3vw, 40px);
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+.contact-form h2 {
+    font-size: clamp(10px, 3vw, 20px);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 100px;
+
+}
+
+.contact-form input {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+
+}
+
+.contact-form textarea {
+    color: black;
+
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+
+   
+
+}
+
+.contact-form button
+ {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in-out;
+
+   
+
+}
+
+.contact-form button:hover {
+    background-color: #5b22b8;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:active {
+    background-color: #3c1445;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1190px) {
+    .contact-page {
+        padding-top: 80px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .contact-form h1 {
+        font-size: clamp(40px, 3vw, 60px);
+      
+    }
+    .contact-form h2 {
+        font-size: clamp(20px, 3vw, 40px);
+
+      
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        max-width: 500px;
+        max-height: 700px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        max-width: 360px;
+        max-height: 800px;
+        width: 95%;
+    }
+
+    .contact-page {
+        height: 1000px;
+
+    }
+}
+

@@ -8,6 +8,7 @@ import ReviewPage from './pages/review-page/review-page';
 import PreLoader from './components/preloader/preloader';
 import AboutUsPage from './pages/about-us-page/about-us-page';
 import StartBuild from './pages/start-build-page/start-build-page';
+import { ContactPage } from './pages/contact-page/contact-page';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/finance-page" element={<FinancePage />} />
           <Route path="/about-page" element={<AboutUsPage />} />
           <Route path="/start-build-page" element={<StartBuild />} />
+          <Route path="/contact-page" element={<ContactPage />} />
 
         </Routes>
       </HashRouter>

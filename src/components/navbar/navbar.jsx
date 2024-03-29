@@ -59,13 +59,13 @@ const Navbar = () => {
                             <NavLink onClick={handleShowNavbar} to="/about-page" >About us</NavLink>
                         </li>
                         <li>
-                            <NavLink onClick={handleShowNavbar} className='search-icon' to="/contact"><MagnifyingGlass size={32} /></NavLink>
+                            <NavLink onClick={handleShowNavbar} className='search-icon' to="/contact-page"><MagnifyingGlass size={32} /></NavLink>
                         </li>
                         <li>
                             <NavLink onClick={handleShowNavbar} className='user-icon' to="https://github.com/FranThe3rd" target='_blank'><InstagramLogo size={32} /></NavLink>
                         </li>
                         <li>
-                            <NavLink onClick={handleShowNavbar} className='shopping-icon' to="/contact"><ShoppingCart size={32} /></NavLink>
+                            <NavLink onClick={handleShowNavbar} className='shopping-icon' to="/cart-page"><ShoppingCart size={32} /></NavLink>
                         </li>
     
                     </ul>
