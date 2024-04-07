@@ -379,6 +379,25 @@
 
     }
 
+    @media only screen and (max-width: 430px) {
+      .start-build-showcase {
+        border-radius: 0px;
+        margin: 10px;
+        width: 95%;
+
+      }
+
+      .start-build-specs {
+        border-radius: 0px;
+        margin: 10px;
+        width: 95%;
+      }
+
+     
+
+
+    }
+
 
    
   

@@ -7,6 +7,8 @@ import aboutPagePcThree from '../../assets/about-us-page-img/about-us-three.png'
 import LevelUp from '../../components/level-up/level-up'
 import CheckingAbout from '../../components/checking-about/checking-about'
 import SignUp from '../../components/sign-up/sign-up'
+import { Link } from 'react-router-dom'
+
 
 
 const AboutUsPage = () => {
@@ -33,7 +35,7 @@ const AboutUsPage = () => {
                 <h1>TRACK YOUR BUILD STATUS</h1>
                 <h2>Here at Infinitron we go through a vigorous process to ensure that every custom pc is built to the highest quality. As soon you've placed your order, your PC goes through multiple stages to ensure that we're building the best quality possible.
                     Have your order number and want to track the process of the build?</h2>
-                    <button className='about-us-track-button'>TRACK PC BUILD </button>
+                    <Link  className="links"style={{textDecoration: 'none'}} to='/start-build-page'><button className='about-us-track-button'>TRACK PC BUILD </button></Link>
             </div>
             <LevelUp />
             <CheckingAbout />

@@ -1,8 +1,10 @@
 import React from 'react'
 import './contact-page.css'
+import SignUp from '../../components/sign-up/sign-up'
 
 export const ContactPage = () => {
 return (
+    <>
     <div className='contact-page'>
         <div className='contact-form'>
             <h1>Get in Touch</h1>
@@ -14,5 +16,7 @@ return (
 
         </div>
     </div>
+        <SignUp />
+        </>
 )
 }

@@ -351,8 +351,8 @@ const StartBuild = () => {
             <div className='start-build-grid'>
                 <h1 className='start-build-h1'>Your Optimized Build.</h1>
                 <div className='start-bttn-container'>
-                    <button className='start-build-bttn-contact'>Save & Email</button>
-                    <button className='start-build-bttn-checkout'>Checkout</button>
+                    <Link to='/contact-page'><button className='start-build-bttn-contact'>Save & Email</button></Link>
+                    <Link to='/cart-page'><button className='start-build-bttn-checkout'>Checkout</button></Link>
                 </div>
             </div>
             <div className='start-build-type-grid'>

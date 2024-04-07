@@ -15,7 +15,8 @@ const LevelUp = () => {
                 <div className='level-up-one'>
                     <h1>LEVEL UP YOUR PC!</h1>
                     <p>Our team of in-house gamers will get you back up and running if you run into any issues. All systems include parts and labor coverage.</p>
-                    <button className='level-up-start-bttn'>START YOUR BUILD</button>
+                    <Link style={{textDecoration: 'none'}} to='/start-build-page'>                    <button className='level-up-start-bttn'>START YOUR BUILD</button>
+</Link>
                     <img className='level-up-image' src={levelUpImage} alt="" />
                 </div>
                 <div className='level-up-one'>
@@ -56,7 +57,7 @@ const LevelUp = () => {
                         <h3 className='level-up-good-h3'>Starting at $2,399
                             Or as low as $77.41 monthly*</h3>
 
-                            <Link className='level-up-view-bttn-links' to='/start-build-page'>
+                            <Link  className='level-up-view-bttn-links' to='/start-build-page'>
                                 <button className='level-up-view-bttn'>VIEW BUILD</button>
                             </Link>
                             <Link className='level-up-view-bttn-links' to='/start-build-page'>
