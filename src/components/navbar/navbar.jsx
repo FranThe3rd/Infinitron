@@ -65,7 +65,7 @@ const Navbar = () => {
                             <NavLink onClick={handleShowNavbar} className='user-icon' to="https://github.com/FranThe3rd" target='_blank'><InstagramLogo size={32} /></NavLink>
                         </li>
                         <li>
-                            <NavLink onClick={handleShowNavbar} className='shopping-icon' to="/cart-page"><ShoppingCart size={32} /></NavLink>
+                            <NavLink onClick={handleShowNavbar} className='shopping-icon' ><ShoppingCart size={32} /></NavLink>
                         </li>
     
                     </ul>

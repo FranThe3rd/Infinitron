@@ -10,7 +10,8 @@
 }
 
 .about-us-page-grid {
-    
+    animation: opacityIn .5s ease-in;
+
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -40,7 +41,9 @@
 }
 
 .about-us-page-img-one {
-    animation: opacityIn .5s ease-in-out;
+    opacity: 0;
+
+    opacity: 1;
 
     filter: drop-shadow(5px -5px 4px #7e3ee4); 
     max-width: 700px;
