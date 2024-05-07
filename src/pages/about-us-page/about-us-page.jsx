@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './about-us-page.css'
 
 import aboutPagePcOne from '../../assets/about-us-page-img/about-us-one.png'
@@ -12,24 +12,46 @@ import { Link } from 'react-router-dom'
 
 
 const AboutUsPage = () => {
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('appear');
+            } else {
+              entry.target.classList.remove('appear');
+            }
+          });
+        });
+    
+        const hiddenElements = document.querySelectorAll('.disappear');
+        hiddenElements.forEach((element) => {
+          observer.observe(element);
+        });
+    
+        return () => {
+          hiddenElements.forEach((element) => {
+            observer.unobserve(element);
+          });
+        };
+      }, []);
     return (
         <div className='about-us-page'>
             <div className='about-us-page-grid'>
-                <div className='about-us-page-text-one'>
+                <div className='about-us-page-text-one '>
                     <h1>Our Mission</h1>
                     <p>Our mission is to provide the best financial advice to our clients. We strive to provide the best customer service and to help our clients achieve their financial goals.</p>
                 </div>
-                <img loading='lazy' className='about-us-page-img-one' src={aboutPagePcThree} alt="" />
-                <img loading='lazy' className='about-us-page-img-one' src={aboutPagePcTwo} alt="" />
-                <div className='about-us-page-text-one'>
+                <img className='about-us-page-img-one disappear ' src={aboutPagePcThree} alt="" />
+                <img  className='about-us-page-img-one disappear ' src={aboutPagePcTwo} alt="" />
+                <div className='about-us-page-text-one '>
                     <h1>Maximum Frame Rates</h1>
                     <p>Select your top games and see how they perform using our online PC builder. Our team will build and optimize your PC to deliver the highest frame rates.</p>
                 </div>
-                <div className='about-us-page-text-one'>
+                <div className='about-us-page-text-one '>
                     <h1>2 Year Warranty</h1>
                     <p>You're protected with us. Our team of in-house gamers will get you back up and running if you run into any issues. All systems include parts and labor coverage.</p>
                 </div>
-                <img loading='lazy' className='about-us-page-img-one' src={aboutPagePcOne} alt="" />
+                <img  className='about-us-page-img-one disappear' src={aboutPagePcOne} alt="" />
             </div>
             <div className='about-us-page-track'>
                 <h1>TRACK YOUR BUILD STATUS</h1>

@@ -9,8 +9,11 @@ import PreLoader from './components/preloader/preloader';
 import AboutUsPage from './pages/about-us-page/about-us-page';
 import StartBuild from './pages/start-build-page/start-build-page';
 import { ContactPage } from './pages/contact-page/contact-page';
+import { useEffect } from 'react';
 
 function App() {
+  
+
   return (
     <div className="App">
       <HashRouter>
